@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Data.OleDb;
+using System.Data.SqlClient;
 
 namespace CuahangNongduoc.DataLayer
 {
@@ -12,15 +12,15 @@ namespace CuahangNongduoc.DataLayer
 
         public DataTable DanhsachKhachHang(bool loai)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM KHACH_HANG WHERE LOAI_KH = " + loai);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM KHACH_HANG WHERE LOAI_KH = " + loai);
             m_Ds.Load(cmd);
 
             return m_Ds;
         }
         public DataTable TimHoTen(String hoten, bool loai)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM KHACH_HANG WHERE HO_TEN LIKE '%' + @hoten + '%' AND LOAI_KH = " + loai);
-            cmd.Parameters.Add("hoten", OleDbType.VarChar).Value = hoten;
+            SqlCommand cmd = new SqlCommand("SELECT * FROM KHACH_HANG WHERE HO_TEN LIKE '%' + @hoten + '%' AND LOAI_KH = " + loai);
+            cmd.Parameters.Add("hoten", SqlDbType.NVarChar).Value = hoten;
             m_Ds.Load(cmd);
 
             return m_Ds;
@@ -28,8 +28,8 @@ namespace CuahangNongduoc.DataLayer
 
         public DataTable TimDiaChi(String diachi, bool loai)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM KHACH_HANG WHERE DIA_CHI LIKE '%' + @diachi + '%' AND LOAI_KH = " + loai);
-            cmd.Parameters.Add("diachi", OleDbType.VarChar).Value = diachi;
+            SqlCommand cmd = new SqlCommand("SELECT * FROM KHACH_HANG WHERE DIA_CHI LIKE '%' + @diachi + '%' AND LOAI_KH = " + loai);
+            cmd.Parameters.Add("diachi", SqlDbType.NVarChar).Value = diachi;
             m_Ds.Load(cmd);
 
             return m_Ds;
@@ -37,7 +37,7 @@ namespace CuahangNongduoc.DataLayer
 
         public DataTable DanhsachKhachHang()
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM KHACH_HANG");
+            SqlCommand cmd = new SqlCommand("SELECT * FROM KHACH_HANG");
             m_Ds.Load(cmd);
 
             return m_Ds;
@@ -45,8 +45,8 @@ namespace CuahangNongduoc.DataLayer
 
         public DataTable LayKhachHang(String id)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM KHACH_HANG WHERE ID = @id");
-            cmd.Parameters.Add("id", OleDbType.VarChar,50).Value = id;
+            SqlCommand cmd = new SqlCommand("SELECT * FROM KHACH_HANG WHERE ID = @id");
+            cmd.Parameters.Add("id", SqlDbType.NVarChar,50).Value = id;
             m_Ds.Load(cmd);
             return m_Ds;
         }
