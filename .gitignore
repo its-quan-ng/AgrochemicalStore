@@ -147,6 +147,6 @@ Package.StoreAssociation.xml
 _pkginfo.txt
 
 # User-specific connection strings
-app.config
+# app.config (commented out - we need this file in repo)
 
 
