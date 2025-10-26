@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+ <html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta content="en-us" http-equiv="Content-Language" /><meta content="text/html; charset=utf-16" http-equiv="Content-Type" /><title _locID="ConversionReport0">
+          Migration Report
+        </title><style> 
+                    /* Body style, for the entire document */
+                    body
+                    {
+                        background: #F3F3F4;
+                        color: #1E1E1F;
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    /* Header1 style, used for the main title */
+                    h1
+                    {
+                        padding: 10px 0px 10px 10px;
+                        font-size: 21pt;
+                        background-color: #E2E2E2;
+                        border-bottom: 1px #C1C1C2 solid; 
+                        color: #201F20;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+
+                    /* Header2 style, used for "Overview" and other sections */
+                    h2
+                    {
+                        font-size: 18pt;
+                        font-weight: normal;
+                        padding: 15px 0 5px 0;
+                        margin: 0;
+                    }
+
+                    /* Header3 style, used for sub-sections, such as project name */
+                    h3
+                    {
+                        font-weight: normal;
+                        font-size: 15pt;
+                        margin: 0;
+                        padding: 15px 0 5px 0;
+                        background-color: transparent;
+                    }
+
+                    /* Color all hyperlinks one color */
+                    a
+                    {
+                        color: #1382CE;
+                    }
+
+                    /* Table styles */ 
+                    table
+                    {
+                        border-spacing: 0 0;
+                        border-collapse: collapse;
+                        font-size: 10pt;
+                    }
+
+                    table th
+                    {
+                        background: #E7E7E8;
+                        text-align: left;
+                        text-decoration: none;
+                        font-weight: normal;
+                        padding: 3px 6px 3px 6px;
+                    }
+
+                    table td
+                    {
+                        vertical-align: top;
+                        padding: 3px 6px 5px 5px;
+                        margin: 0px;
+                        border: 1px solid #E7E7E8;
+                        background: #F7F7F8;
+                    }
+
+                    /* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+                    .localLink
+                    {
+                        color: #1E1E1F;
+                        background: #EEEEED;
+                        text-decoration: none;
+                    }
+
+                    .localLink:hover
+                    {
+                        color: #1382CE;
+                        background: #FFFF99;
+                        text-decoration: none;
+                    }
+
+                    /* Center text, used in the over views cells that contain message level counts */ 
+                    .textCentered
+                    {
+                        text-align: center;
+                    }
+
+                    /* The message cells in message tables should take up all avaliable space */
+                    .messageCell
+                    {
+                        width: 100%;
+                    }
+
+                    /* Padding around the content after the h1 */ 
+                    #content 
+                    {
+	                    padding: 0px 12px 12px 12px; 
+                    }
+
+                    /* The overview table expands to width, with a max width of 97% */ 
+                    #overview table
+                    {
+                        width: auto;
+                        max-width: 75%; 
+                    }
+
+                    /* The messages tables are always 97% width */
+                    #messages table
+                    {
+                        width: 97%;
+                    }
+
+                    /* All Icons */
+                    .IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded
+                    {
+                        min-width:18px;
+                        min-height:18px; 
+                        background-repeat:no-repeat;
+                        background-position:center;
+                    }
+
+                    /* Success icon encoded */
+                    .IconSuccessEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconSuccess#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVR4Xq2TsUsCURzHv15g8ZJcBWlyiYYgCIWcb9DFRRwMW5TA2c0/QEFwFkxxUQdxVlBwCYWOi6IhWgQhBLHJUCkhLr/BW8S7gvrAg+N+v8/v+x68Z8MGy+XSCyABQAXgBgHGALoASkIIDWSLeLBetdHryMjd5IxQPWT4rn1c/P7+xxp72Cs9m5SZ0Bq2vPnbPFafK2zDvmNHypdC0BPkLlQhxJsCAhQoZwdZU5mwxh720qGo8MzTxTTKZDPCx2HoVzp6lz0Q9tKhyx0kGs8Ny+TkWRKk8lCROwEduhyg9l/6lunOPSfmH3NUH6uQ0KHLAe7JYvJjevm+DAMGJHToKtigE+vwvIidxLamb8IBY9e+C5LiXREkfho3TSd06HJA13/oh6T51MTsfQbHrsMynQ5dDihFjiK8JJAU9AKIWTp76dCVN7HWHrajmUEGvyF9nkbAE6gLIS7kTUyuf2gscLoJrElZo/Mvj+nPz/kLTmfnEwP3tB0AAAAASUVORK5CYII=);
+                    }
+
+                    /* Information icon encoded */
+                    .IconInfoEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconInformation#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4Xs2TsUoDQRRF7wwoziokjZUKadInhdhukR9YP8DMX1hYW+QvdsXa/QHBbcXC7W0CamWTQnclFutceIQJwwaWNLlwm5k5d94M76mmaeCrrmsLYOocY12FcxZFUeozCqKqqgYA8uevv1H6VuPxcwlfk5N92KHBxfFeCSAxxswlYAW/Xr989x/mv9gkhtyMDhcAxgzRsp7flj8B/HF1RsMXq+NZMkopaHe7lbKxQUEIGbKsYNoGn969060hZBkQex/W8oRQwsQaW2o3Ago2SVcJUzAgY3N0lTCZZm+zPS8HB51gMmS1DEYyOz9acKO1D8JWTlafKIMxdhvlfdyT94Vv5h7P8Ky7nQzACmhvKq3zk3PjW9asz9D/1oigecsioooAAAAASUVORK5CYII=);
+                    }
+
+                    /* Warning icon encoded */
+                    .IconWarningEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconWarning#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+                    }
+
+                    /* Error icon encoded */
+                    .IconErrorEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconError#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4XqWTvUoEQRCE6wYPZUA80AfwAQz23uCMjA7MDRQEIzPBVEyNTQUFIw00vcQTTMzuAh/AxEQQT8HF/3G/oGGnEUGuoNnd6qoZuqltyKEsyzVJq5I6rnUp6SjGeGhESikzzlc1eL7opfuVbrqbU1Zw9NCgtQMaZpY0eNnaaL2fHusvTK5vKu7sjSS1Y4y3QUA6K3e3Mau5UFDyMP7tYF9o8cAHZv68vipoIJg971PZIZ5HiwdvYGGvFVFHmGmZ2MxwmQYPXubPl9Up0tfoMQGetXd6mRbvhBw+boZ6WF7Mbv1+GsHRk0fQmPAH1GfmZirbCfDJ61tw3Px8/8pZsPAG4jlVhcPgZ7adwNWBB68lkRQWFiTgFlbnLY3DGGM7izIJIyT/jjIvEJw6fdJTc6krDzh6aMwMP9bvDH4ADSsa9uSWVJkAAAAASUVORK5CYII=);
+                    }
+                 </style><script type="text/javascript" language="javascript"> 
+          
+            // Startup 
+            // Hook up the the loaded event for the document/window, to linkify the document content
+            var startupFunction = function() { linkifyElement("messages"); };
+            
+            if(window.attachEvent)
+            {
+              window.attachEvent('onload', startupFunction);
+            }
+            else if (window.addEventListener) 
+            {
+              window.addEventListener('load', startupFunction, false);
+            }
+            else 
+            {
+              document.addEventListener('load', startupFunction, false);
+            } 
+            
+            // Toggles the visibility of table rows with the specified name 
+            function toggleTableRowsByName(name)
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  if(!!currentName && currentName.indexOf(name) == 0)
+                  {
+                      var isVisible = allRows[i].style.display == ''; 
+                      isVisible ? allRows[i].style.display = 'none' : allRows[i].style.display = '';
+                  }
+               }
+            }
+            
+            function scrollToFirstVisibleRow(name) 
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  var isVisible = allRows[i].style.display == ''; 
+                  if(!!currentName && currentName.indexOf(name) == 0 && isVisible)
+                  {
+                     allRows[i].scrollIntoView(true); 
+                     return true; 
+                  }
+               }
+               
+               return false;
+            }
+            
+            // Linkifies the specified text content, replaces candidate links with html links 
+            function linkify(text)
+            {
+                 if(!text || 0 === text.length)
+                 {
+                     return text; 
+                 }
+
+                 // Find http, https and ftp links and replace them with hyper links 
+                 var urlLink = /(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.]+(:[a-zA-Z0-9]*)?\/?([a-zA-Z0-9\-\._\?\,\/\\\+&%\$#\=~;\{\}])*/gi;
+                 
+                 return text.replace(urlLink, '<a href="$&">$&</a>') ;
+            }
+            
+            // Linkifies the specified element by ID
+            function linkifyElement(id)
+            {
+                var element = document.getElementById(id);
+                if(!!element)
+                {
+                  element.innerHTML = linkify(element.innerHTML); 
+                }
+            }
+            
+            function ToggleMessageVisibility(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              toggleTableRowsByName("MessageRowClass" + projectName);
+              toggleTableRowsByName('MessageRowHeaderShow' + projectName);
+              toggleTableRowsByName('MessageRowHeaderHide' + projectName); 
+            }
+            
+            function ScrollToFirstVisibleMessage(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              // First try the 'Show messages' row
+              if(!scrollToFirstVisibleRow('MessageRowHeaderShow' + projectName))
+              {
+                // Failed to find a visible row for 'Show messages', try an actual message row 
+                scrollToFirstVisibleRow('MessageRowClass' + projectName); 
+              }
+            }
+           </script></head><body><h1 _locID="ConversionReport">
+          Migration Report - CuahangNongDuoc</h1><div id="content"><h2 _locID="OverviewTitle">Overview</h2><div id="overview"><table><tr><th></th><th _locID="ProjectTableHeader">Project</th><th _locID="PathTableHeader">Path</th><th _locID="ErrorsTableHeader">Errors</th><th _locID="WarningsTableHeader">Warnings</th><th _locID="MessagesTableHeader">Messages</th></tr><tr><td class="IconWarningEncoded" /><td><strong><a href="#Solution"><span _locID="OverviewSolutionSpan">Solution</span></a></strong></td><td>CuahangNongDuoc.sln</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#SolutionWarning">1</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Solution'); return false;">2</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#CuahangNongduoc">CuahangNongduoc</a></strong></td><td>CuahangNongduoc.csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('CuahangNongduoc'); return false;">205</a></td></tr></table></div><h2 _locID="SolutionAndProjectsTitle">Solution and projects</h2><div id="messages"><a name="Solution" /><h3 _locID="ProjectDisplayNameHeader">Solution</h3><table><tr id="SolutionHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="WarningRowClassSolution"><td class="IconWarningEncoded"><a name="SolutionWarning" /></td><td class="messageCell"><strong>CuahangNongDuoc.sln:
+        </strong><span>Visual Studio needs to make non-functional changes to this project in order to enable the project to open in released versions of Visual Studio newer than Visual Studio 2010 SP1 without impacting project behavior.</span></td></tr><tr name="MessageRowHeaderShowSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Show 2 additional messages
+        </a></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>CuahangNongDuoc.sln:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\CuahangNongDuoc.sln</span></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>CuahangNongDuoc.sln:
+        </strong><span>Solution migrated successfully</span></td></tr><tr style="display: none" name="MessageRowHeaderHideSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Hide 2 additional messages
+        </a></td></tr></table><a name="CuahangNongduoc" /><h3>CuahangNongduoc</h3><table><tr id="CuahangNongduocHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="MessageRowHeaderShowCuahangNongduoc"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="CuahangNongduocMessage" onclick="ToggleMessageVisibility('CuahangNongduoc'); return false;">
+          Show 205 additional messages
+        </a></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>CuahangNongduoc.csproj:
+        </strong><span>Project file successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\CuahangNongduoc.csproj</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>CuahangNongduoc.csproj.user:
+        </strong><span>Project user file successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\CuahangNongduoc.csproj.user</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\ChiTietPhieuBan.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\ChiTietPhieuBan.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\PhieuChi.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\PhieuChi.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\LyDoChi.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\LyDoChi.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\NhaCungCap.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\NhaCungCap.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\CuaHang.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\CuaHang.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\DuNoKhachHang.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\DuNoKhachHang.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\PhieuThanhToan.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\PhieuThanhToan.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\DonViTinh.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\DonViTinh.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\KhachHang.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\KhachHang.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\MaSanPham.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\MaSanPham.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\PhieuBan.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\PhieuBan.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\PhieuNhap.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\PhieuNhap.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\SanPham.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\SanPham.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>BusinessObject\SoLuongTon.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\BusinessObject\SoLuongTon.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\ChiTietPhieuBanController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\ChiTietPhieuBanController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\PhieuChiController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\PhieuChiController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\LyDoChiController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\LyDoChiController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\NhaCungCapController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\NhaCungCapController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\DuNoKhachHangController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\DuNoKhachHangController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\PhieuThanhToanController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\PhieuThanhToanController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\PhieuNhapController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\PhieuNhapController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\KhachHangController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\KhachHangController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\MaSanPhamController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\MaSanPhamController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\PhieuBanController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\PhieuBanController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\SanPhamController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\SanPhamController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Controller\DonViTinhController.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Controller\DonViTinhController.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\PhieuChiFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\PhieuChiFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuChi.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuChi.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuChi.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuChi.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmPhieuChi.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmPhieuChi.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmPhieuChi.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmPhieuChi.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\LyDoChiFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\LyDoChiFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmLyDoChi.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmLyDoChi.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmLyDoChi.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmLyDoChi.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\NhaCungCapFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\NhaCungCapFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\DuNoKhachHangFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\DuNoKhachHangFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\PhieuThanhToanFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\PhieuThanhToanFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmBanSi.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmBanSi.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmBanSi.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmBanSi.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDanhsachPhieuBanSi.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDanhsachPhieuBanSi.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDanhsachPhieuBanSi.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDanhsachPhieuBanSi.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDanhsachPhieuBanLe.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDanhsachPhieuBanLe.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDanhsachPhieuBanLe.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDanhsachPhieuBanLe.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\ChiTietPhieuBanFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\ChiTietPhieuBanFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\ChiTietPhieuNhapFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\ChiTietPhieuNhapFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\PhieuNhapFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\PhieuNhapFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\MaSanPhanFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\MaSanPhanFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\PhieuBanFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\PhieuBanFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmBanLe.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmBanLe.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmBanLe.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmBanLe.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDaiLy.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDaiLy.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDaiLy.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDaiLy.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\KhachHangFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\KhachHangFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\SanPhamFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\SanPhamFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataLayer\DonViTinhFactory.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataLayer\DonViTinhFactory.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>DataService.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\DataService.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDanhsachPhieuNhap.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDanhsachPhieuNhap.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDanhsachPhieuNhap.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDanhsachPhieuNhap.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDoanhThu.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDoanhThu.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDoanhThu.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDoanhThu.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDonViTinh.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDonViTinh.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDonViTinh.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDonViTinh.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDunoKhachhang.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDunoKhachhang.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDunoKhachhang.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDunoKhachhang.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInDunoKhachHang.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInDunoKhachHang.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInDunoKhachHang.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInDunoKhachHang.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuBan.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuBan.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuBan.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuBan.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuNhap.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuNhap.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuNhap.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuNhap.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmKhachHang.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmKhachHang.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmKhachHang.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmKhachHang.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmMain.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmMain.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmMain.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmMain.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmNhaCungCap.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmNhaCungCap.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmNhaCungCap.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmNhaCungCap.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmNhapHang.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmNhapHang.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmNhapHang.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmNhapHang.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuThanhToan.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuThanhToan.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuThanhToan.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuThanhToan.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSanPham.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSanPham.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSanPham.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSanPham.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSanphamHethan.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSanphamHethan.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSanphamHethan.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSanphamHethan.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSoLuongBan.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSoLuongBan.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSoLuongBan.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSoLuongBan.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSoLuongTon.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSoLuongTon.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSoLuongTon.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSoLuongTon.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmThanhToan.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmThanhToan.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmThanhToan.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmThanhToan.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmThongtinCuahang.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmThongtinCuahang.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmThongtinCuahang.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmThongtinCuahang.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmThongtinLienhe.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmThongtinLienhe.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmThongtinLienhe.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmThongtinLienhe.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuBanLe.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuBanLe.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuBanLe.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuBanLe.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuChi.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuChi.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuChi.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuChi.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuNhap.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuNhap.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuNhap.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuNhap.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuThu.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuThu.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuThu.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuThu.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Num2Str.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Num2Str.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Program.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Program.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\AssemblyInfo.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\AssemblyInfo.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\Resources.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\Resources.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\Settings.Designer.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\Settings.Designer.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Settings.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Settings.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>ThamSo.cs:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\ThamSo.cs</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\Settings.settings:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\Settings.settings</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\save.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\save.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\Phieunhap.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\Phieunhap.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\Bansi.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\Bansi.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\Banle.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\Banle.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\KhachHang.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\KhachHang.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\DaiLy.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\DaiLy.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\SanPham.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\SanPham.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\DoanhThu.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\DoanhThu.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\TonKho.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\TonKho.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\Thanhtoan.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\Thanhtoan.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\reload.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\reload.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\Soluongban.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\Soluongban.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\SanPhamHethan.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\SanPhamHethan.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\reload_user.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\reload_user.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\reload_group.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\reload_group.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\DunoKhachhang.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\DunoKhachhang.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\Thoat.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\Thoat.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\LyDoChi.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\LyDoChi.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\DonViTinh.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\DonViTinh.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\PhieuChi.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\PhieuChi.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\DataSources\CuahangNongduoc.BusinessObject.PhieuChi.datasource:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\DataSources\CuahangNongduoc.BusinessObject.PhieuChi.datasource</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\NhaCungCap.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\NhaCungCap.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\DataSources\CuahangNongduoc.BusinessObject.SoLuongTon.datasource:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\DataSources\CuahangNongduoc.BusinessObject.SoLuongTon.datasource</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\stop.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\stop.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\edit.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\edit.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\DataSources\CuahangNongduoc.BusinessObject.ChiTietPhieuBan.datasource:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\DataSources\CuahangNongduoc.BusinessObject.ChiTietPhieuBan.datasource</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\DataSources\CuahangNongduoc.BusinessObject.DuNoKhachHang.datasource:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\DataSources\CuahangNongduoc.BusinessObject.DuNoKhachHang.datasource</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\DataSources\CuahangNongduoc.BusinessObject.PhieuBan.datasource:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\DataSources\CuahangNongduoc.BusinessObject.PhieuBan.datasource</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\DataSources\CuahangNongduoc.BusinessObject.PhieuThanhToan.datasource:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\DataSources\CuahangNongduoc.BusinessObject.PhieuThanhToan.datasource</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\save_print.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\save_print.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\DataSources\CuahangNongduoc.BusinessObject.MaSanPham.datasource:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\DataSources\CuahangNongduoc.BusinessObject.MaSanPham.datasource</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\DataSources\CuahangNongduoc.BusinessObject.PhieuNhap.datasource:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\DataSources\CuahangNongduoc.BusinessObject.PhieuNhap.datasource</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\down.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\down.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\up.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\up.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\reload_24.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\reload_24.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\back.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\back.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\forward.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\forward.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\add_16.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\add_16.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\printer.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\printer.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\find.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\find.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\remove.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\remove.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\undo.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\undo.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\add.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\add.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\save_new.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\save_new.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\save_exit.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\save_exit.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\ThemKhachHang.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\ThemKhachHang.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\help.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\help.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\info.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\info.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Resources\Ok.png:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Resources\Ok.png</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>CuahangNongduoc.ico:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\CuahangNongduoc.ico</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuChi.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuChi.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmPhieuChi.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmPhieuChi.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmLyDoChi.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmLyDoChi.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmBanSi.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmBanSi.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDanhsachPhieuBanSi.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDanhsachPhieuBanSi.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDanhsachPhieuBanLe.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDanhsachPhieuBanLe.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmBanLe.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmBanLe.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDaiLy.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDaiLy.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDanhsachPhieuNhap.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDanhsachPhieuNhap.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDoanhThu.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDoanhThu.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDonViTinh.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDonViTinh.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmDunoKhachhang.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmDunoKhachhang.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInDunoKhachHang.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInDunoKhachHang.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuBan.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuBan.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuNhap.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuNhap.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmKhachHang.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmKhachHang.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmMain.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmMain.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmNhaCungCap.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmNhaCungCap.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmNhapHang.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmNhapHang.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmInPhieuThanhToan.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmInPhieuThanhToan.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSanPham.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSanPham.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSanphamHethan.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSanphamHethan.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSoLuongBan.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSoLuongBan.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmSoLuongTon.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmSoLuongTon.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmThanhToan.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmThanhToan.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmThongtinCuahang.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmThongtinCuahang.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmThongtinLienhe.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmThongtinLienhe.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuBanLe.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuBanLe.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuChi.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuChi.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuNhap.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuNhap.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>frmTimPhieuThu.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\frmTimPhieuThu.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Properties\Resources.resx:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Properties\Resources.resx</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptChiTietPhieuBan.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptChiTietPhieuBan.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptChiTietPhieuNhap.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptChiTietPhieuNhap.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptDsDuNoKhachHang.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptDsDuNoKhachHang.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptDuNoKhachHang.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptDuNoKhachHang.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptPhieuBan.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptPhieuBan.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptPhieuChi.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptPhieuChi.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptPhieuNhap.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptPhieuNhap.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptSanPhamHetHan.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptSanPhamHetHan.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptSoLuongBan.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptSoLuongBan.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptSoLuongTon.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptSoLuongTon.rdlc</span></td></tr><tr name="MessageRowClassCuahangNongduoc" style="display: none"><td class="IconInfoEncoded"><a name="CuahangNongduocMessage" /></td><td class="messageCell"><strong>Report\rptThanhToan.rdlc:
+        </strong><span>File successfully backed up as D:\Workspace\Agrochemical-Store-Management\Backup\Backup\Report\rptThanhToan.rdlc</span></td></tr><tr style="display: none" name="MessageRowHeaderHideCuahangNongduoc"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="CuahangNongduocMessage" onclick="ToggleMessageVisibility('CuahangNongduoc'); return false;">
+          Hide 205 additional messages
+        </a></td></tr></table></div></div></body></html>
